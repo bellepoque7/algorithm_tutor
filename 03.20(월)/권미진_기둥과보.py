@@ -20,8 +20,7 @@ def build(x,y,a):
         answer.append([x,y,a])
     elif a == 1 and (([x,y-1,0] in answer) or ([x+1,y-1,0] in answer) or (([x-1,y,1] in answer) and ([x+1,y,1] in answer))):
         answer.append([x,y,a])
-    else:
-        flag = False
+
 #삭제 함수
 def delete(x,y,a):
     global answer,flag,temp,answer1
