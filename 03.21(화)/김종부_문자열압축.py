@@ -16,8 +16,12 @@ def solution(s):
                 else : #cnt 1이외에는 갯수 표시 해야함  (한개이상 존재) ★이거 찾기
                     b += str(cnt) + check #반복 문자 앞에 갯수 더하기
              '''       
-              #조건     
+              #조건 ??
              '''       
+        if cnt == 1:
+            b += check
+        else :
+            b += str(cnt) +check
         answer.append(len(b)) # 더해진 b값 리스트에 넣기
     answer = min(answer) #리스트에서 최소값 찾기
     return answer
