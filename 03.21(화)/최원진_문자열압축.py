@@ -4,7 +4,7 @@ def solution(s):
     cnt = 1
     res = 1e9
 
-    for i in range(1,len(s)):
+    for i in range(1,len(s)+1):
         for j in range(0,len(s),i):
             if j+i <= len(s):
                 if s[j:j+i] == s[j+i:j+2*i]:
