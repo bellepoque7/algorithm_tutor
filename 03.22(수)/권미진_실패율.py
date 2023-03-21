@@ -1,5 +1,4 @@
-#1 (조금 더 빠름)
-
+#1 
 def solution(N, stages):
 
     temp = []
@@ -21,7 +20,6 @@ def solution(N, stages):
     if len(answer) < N:
         for i in range(test_range,N+1):
             answer.append(i)
-
     return answer
 
 #2
@@ -32,12 +30,11 @@ def solution(N, stages):
     for i in range(1, N + 1):
         if players == 0:
             temp.append((i, 0))
-
-        else:
-            cur_p = stages.count(i)
-            f_rate = cur_p / players
-            temp.append((i, f_rate))
-            players -= cur_p
+            continue
+        cur_p = stages.count(i)
+        f_rate = cur_p / players
+        temp.append((i, f_rate))
+        players -= cur_p
 
     temp = sorted(temp, key=lambda x: (x[1], -x[0]), reverse=True)
     answer = [x[0] for x in temp]
