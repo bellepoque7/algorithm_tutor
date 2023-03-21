@@ -2,25 +2,33 @@
 파일은 `임정_기둥과보` 와 같이 저장해주세요.
 
 
-### 1. example test
+### 1. 예시 연습
 
 
-### 2. varaible declearation
+- "aabbaccc"	 -> 7
+- "ababcdcdababcdcd" ->	9
+- "abcabcdede" ->	8
+- "abcabcabcabcdededededede" ->	14
+- "xababcdcdababcdcd" -> 	17
 
-- answer: answer string 
+
+
+### 2. 변수 선언
+
+- answer: 결과 담을 변수(string)
 
 ex) s: aabbaccc   -> 2a2ba3c
 
-- compressed: unit string to compressed
+- compressed: 압축할 단위 문자열(string)
 
-- count: compressed unit string count
+- count: compressed 변수의 반복 횟수
 
-- prev: concat(count, compressed) will be part of answer
+- prev: count 변수와  compressed 변수의 합체
 
 ### 3. idea
 
-- s's length is over 1 and below 1000, thus i will be ok with nested loop and  compeleted search
 
-- len(compressed) will be 1 to len(s)//2 
+- s 의 문자열은 1~1000 범위. 따라서 이중루프를 통한 완전 탐색 괜찮다!
+- len(compressed)의 후보는 1부터 len(s)의 절반. 따라서 반복문 Range
 
 
