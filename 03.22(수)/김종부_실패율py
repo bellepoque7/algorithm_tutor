@@ -1,0 +1,15 @@
+def solution(N, stages):
+    
+    people = len(stages) # 총인원 
+    
+    fail_rate = {} #실패율을 담을 딕셔너리 선언 (key, value로 확인하기 편해서)
+    for i in range(1,N+1): 
+        if i in stages: #stages 안에 i 가 있을 경우, 스테이지 진행중으로 실패발생 
+            fail_rate[i] = stages.count(i) / people # 딕셔너리에 stages 안에 있는 i 갯수 / 총인원 (실패율 입력)
+            people -= stages.count(i) # 총인원은 전체인원 - stages 안에 있는 i 갯수(인원) 갱신해야함
+        else : #stages 안에 i 가 없을 경우, 0 기입 (실패 없음)
+            fail_rate[i] = 0
+
+    answer = sorted(fail_rate.keys(), key=lambda key: fail_rate[key], reverse=True) # value 내림차순 정리 후 key값 추출
+
+    return answer
