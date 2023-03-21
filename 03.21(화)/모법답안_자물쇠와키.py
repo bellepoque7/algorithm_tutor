@@ -1,5 +1,5 @@
 '''
-do not open without solving problem plz
+문제 풀지 말고 열어보지마세요 ㅠ_ㅠ  로직을 스스로 고민해야 실력이 늡니다 !!
 '''
 
 def solution(s):
