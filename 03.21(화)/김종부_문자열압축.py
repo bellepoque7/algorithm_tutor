@@ -16,7 +16,7 @@ def solution(s):
                 else : #cnt 1이외에는 갯수 표시 해야함  (한개이상 존재) ★이거 찾기
                     b += str(cnt) + check #반복 문자 앞에 갯수 더하기
              '''       
-              #조건 ??
+              #조건 더 생각 test 2개맞음
              '''       
         if cnt == 1:
             b += check
