@@ -1,4 +1,4 @@
-from 임정_기둥과보 import *
+from 임형묵_기둥과보 import *
 import time
 
 import numpy as np
@@ -32,11 +32,11 @@ def get_test():
     result_list = [[[1,0,0],[1,1,1],[2,1,0],[2,2,1],[3,2,1],[4,2,1],[5,0,0],[5,1,0]],
                    [[0,0,0],[0,1,1],[1,1,1],[2,1,1],[3,1,1],[4,0,0]]]
     
-    #임의 생성 테스트케이스 (극한)
-    n,build_frame,result = testcase()
-    n_list.append(n)
-    build_frame_list.append(build_frame)
-    result_list.append(result)
+    # #임의 생성 테스트케이스 (극한)
+    # n,build_frame,result = testcase()
+    # n_list.append(n)
+    # build_frame_list.append(build_frame)
+    # result_list.append(result)
 
 
     start = time.time()
