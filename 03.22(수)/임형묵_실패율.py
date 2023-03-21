@@ -6,13 +6,6 @@ def solution(N, stages):
 
     fail_rate = [0] * (N+1)
 
-    while 1:
-        if not qu:
-            break
-        if qu[0] == 0:
-            qu.popleft()
-        else:
-            break
 
     for i in range(1,N+1):
         # print(f' fail_rate:{fail_rate}')
