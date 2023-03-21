@@ -5,11 +5,23 @@
 ### 1. 예시 연습
 
 
-- "aabbaccc"	 -> 7
-- "ababcdcdababcdcd" ->	9
-- "abcabcdede" ->	8
-- "abcabcabcabcdededededede" ->	14
-- "xababcdcdababcdcd" -> 	17
+- "aabbaccc"	 -> 7(1개로 자를때) 2a2ba3c
+
+- "ababcdcd ababcdcd" ->	9(8개로 자를때) 2ababcdcd
+
+- "abcabcdede" ->	8(3개로 자를때) 3abcdede
+
+- "abc abc abc abc de de de de de de" -> 14(6개로 자를때)
+
+문자열을 2개 단위로 자르면 "abcabcabcabc6de" 
+
+문자열을 3개 단위로 자르면 "4abcdededededede"
+
+문자열을 4개 단위로 자르면 "abcabcabcabc3dede"
+
+문자열을 6개 단위로 자를 경우 "2abcabc2dedede"
+
+- "xababcdcdababcdcd" -> 	17(압축 불가)
 
 
 
@@ -30,5 +42,3 @@ ex) s: aabbaccc   -> 2a2ba3c
 
 - s 의 문자열은 1~1000 범위. 따라서 이중루프를 통한 완전 탐색 괜찮다!
 - len(compressed)의 후보는 1부터 len(s)의 절반. 따라서 반복문 Range
-
-
