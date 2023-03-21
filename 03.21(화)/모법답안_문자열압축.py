@@ -4,7 +4,7 @@
 
 def solution(s):
   answer = len(s)
-  # 1 step forward.
+  # 차근차근 1자리부터 전체문자열의 절반길이까지 loop 진행
   for step in range(1,len(s) // 2 + 1):
     compressed = ''
     prev = s[0:step] # s[0:1], s[0:2], s[0:3]...
