@@ -44,7 +44,7 @@ n= 200,000 이므로 O(n^2)은 TLE(1억 이상) 따라서 O(nlogn)의 방법을 
 ### 오늘의 팁
 
 - 반복문을 돌릴때 range(len(my_list)) 대신 enumerate을 써보세요
-- 성능이차는 아주 미묘하지만 가독성은 굉장히 좋아집니다. (Link)[https://stackoverflow.com/questions/11990105/rangelenlist-or-enumeratelist]
+- 성능이차는 아주 미묘하지만 가독성은 굉장히 좋아집니다. [rangelenlist-or-enumeratelist])[https://stackoverflow.com/questions/11990105/rangelenlist-or-enumeratelist)
 
 ```
 for i in range(len(my_list)):
