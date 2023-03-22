@@ -22,7 +22,8 @@
 
 ### idea
 
-n= 200,000 이므로 O(n^2)은 TLE(1억 이상) 따라서 O(nlogn)의 방법을 고민. 실제로 O(nlogn)은 3,400,000
+- n= 200,000 이므로 O(n^2)은 TLE(1억 이상) 따라서 O(nlogn)의 방법을 고민. 실제로 O(nlogn)은 3,400,000
+- but! n= 500, m = 200,000  이면 O(NM)은 1억. 가까스로 가능할지도?
 
 [Python 자료형별 time complexity](https://wiki.python.org/moin/TimeComplexity)
 
