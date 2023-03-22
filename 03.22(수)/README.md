@@ -21,29 +21,40 @@ n= 200,000 이므로 O(n^2)은 TLE(1억 이상) 따라서 O(nlogn)의 방법을 
 
 [Python 자료형별 time complexity](https://wiki.python.org/moin/TimeComplexity)
 
-<img width="463" alt="image" src="https://user-images.githubusercontent.com/39439424/226795138-581184fa-477a-4f57-ba40-e38b6caa316b.png">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/39439424/226795138-581184fa-477a-4f57-ba40-e38b6caa316b.png">
 
-<img width="412" alt="image" src="https://user-images.githubusercontent.com/39439424/226795195-501c25c4-ac06-4e0b-a8f8-2562f6c7f125.png">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/39439424/226795195-501c25c4-ac06-4e0b-a8f8-2562f6c7f125.png">
+
+- 특이점: 
+  - x in list은 O(n)  list의 길이가 길어지면 비효율적
+  - x in dict은 O(1)  dict의 길이와 무관하게 상수시간 소요
+- why?
+
+
+
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/39439424/226796724-3927f4dc-2d26-4fb8-9861-efb7cad86189.png">
+
 
 
 cf) 3/21 일일테스트 질문
 문제: 총쏘고 돌리고 총쏘고 무한 반복
 
 정답코드
+deque[(1,1),(2,1),(3,1)]
 ```
-# deque[(1,1),(2,1),(3,1)]
 deque.rotate(-2)
-#deque[(3,1),(2,1),(1,1)]
 ```
+deque[(3,1),(2,1),(1,1)]
+
 
 교육생 rotate 구현
 ```
 for i in range(n):
   Deque.popleft()
   list.append()
-#결과 test case(n= 1000)일때 TLE
-```
 
-- 교훈: 파이썬 개발자들은 똑똑하다. 구현된 함수가 있으면 잘 써보자. 자주 쓰는 메소드의 time compexity를 잘 알면 좋다.
+```
+- 결과 test case(n= 1000)일때 TLE
+- 교훈: 파이썬 내장함수는 똑똑하다. 구현된 함수가 있으면 잘 써보자. 자주 쓰는 메소드의 time compexity를 잘 알면 좋다.
 
 
