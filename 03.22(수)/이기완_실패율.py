@@ -1,3 +1,5 @@
+'정답률 63% 풀이'
+
 def solution(N, stages):
     stages.sort()
     temp = 0
