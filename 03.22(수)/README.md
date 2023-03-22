@@ -1,2 +1,49 @@
 ##
 파일은 `임정_기둥과보` 와 같이 저장해주세요.
+
+
+###  1. 예시 
+
+### 2. 변수 선언
+
+- count: stage 에 머물러 있는 사람수 계산
+
+- fail: 실패율 계산
+
+- answer: stage 별 실패율 저장(list)
+
+- res: 결과
+
+
+### idea
+
+n= 200,000 이므로 O(n^2)은 TLE(1억 이상) 따라서 O(nlogn)의 방법을 고민. 실제로 O(nlogn)은 3,400,000
+
+[Python 자료형별 time complexity](https://wiki.python.org/moin/TimeComplexity)
+
+<img width="463" alt="image" src="https://user-images.githubusercontent.com/39439424/226795138-581184fa-477a-4f57-ba40-e38b6caa316b.png">
+
+<img width="412" alt="image" src="https://user-images.githubusercontent.com/39439424/226795195-501c25c4-ac06-4e0b-a8f8-2562f6c7f125.png">
+
+
+cf) 3/21 일일테스트 질문
+문제: 총쏘고 돌리고 총쏘고 무한 반복
+
+정답코드
+```
+# deque[(1,1),(2,1),(3,1)]
+deque.rotate(-2)
+#deque[(3,1),(2,1),(1,1)]
+```
+
+교육생 rotate 구현
+```
+for i in range(n):
+  Deque.popleft()
+  list.append()
+#결과 test case(n= 1000)일때 TLE
+```
+
+- 교훈: 파이썬 개발자들은 똑똑하다. 구현된 함수가 있으면 잘 써보자. 자주 쓰는 메소드의 time compexity를 잘 알면 좋다.
+
+
