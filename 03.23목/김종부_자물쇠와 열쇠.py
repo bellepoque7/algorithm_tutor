@@ -7,9 +7,7 @@ def rotate90(arr):
     return arr
 
 def solution(key, lock): # 0 홈 , 1 돌기
-    
-    v = [[0]*len(lock) for _ in range(len(lock))]
-    print(v)
+
     # key를 반전 시킴 (맞는 자물쇠 찾기 위해)
     for i in range(len(key)):
         for j in range(len(key)):
