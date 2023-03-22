@@ -55,11 +55,13 @@ for i in range(len(my_list)):
 for i,j in enumerate(my_list):
   print(i,j))
 ```
-### 2. runtimeerror - divionbyzero
+### 2. runtime error - divionbyzero
 - 무엇인가 나눌때는 division by zero, 즉, 분모에 0에 가는 경우의 수는 없는지 체크해보세요
-- python 으로 구현하기보다  내장함수를 써보세요 
+
 
 ### 3.time complexity - buili-in func vs my code(T.T)
+- python 으로 구현하기보다  내장함수를 써보세요 
+
 ex. 1로 이루어진 1,000,000 개의 list의 합을 구해보자. 둘다 이론적으로는 시간복잡도 O(n)
 - 방법1) my_list.count(1)
 - 방법2) for 문을 이용한 더하기 
