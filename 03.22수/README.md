@@ -56,6 +56,15 @@ for i,j in enumerate(my_list):
 ```
 
 - 무엇인가 나눌때는 division by zero, 즉, 분모에 0에 가는 경우의 수는 없는지 체크해보세요
+- python 으로 구현하기보다  내장함수를 써보세요 
+
+ex. 1로 이루어진 1,000,0000 개의 list의 합을 구해보자. 둘다 이론적으로는 시간복잡도 O(n)
+- 방법1) my_list.count(1)
+- 방법2) for 문을 이용한 더하기 
+
+<img width="967" alt="image" src="https://user-images.githubusercontent.com/39439424/226835124-43d6d227-5966-4db3-983d-ce4edbe3a5e7.png">
+
+
 
 ### 3/21 일일테스트 질문
 문제: 총쏘고 돌리고 총쏘고 무한 반복
