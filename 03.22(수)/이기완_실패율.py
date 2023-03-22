@@ -19,7 +19,7 @@ def solution(N, stages):
         total = 0
         temp = 0
 
-    result = sorted(result, key = lambda x : (x[1]), reverse = True)
+    result = sorted(result, key = lambda x : (-x[1],x[0]))
     
     for i in range(N) :
         answer.append(result[i][0])
