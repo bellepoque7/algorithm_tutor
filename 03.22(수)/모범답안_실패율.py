@@ -24,5 +24,5 @@ def solution(N, stages):
     answer = sorted(answer, key = lambda t: t[1], reverse=True)
 
     #정렬된 스테이지 번호 출력
-    answer = [i[0] for i in answer]
-    return answer
+    res = [i[0] for i in answer]
+    return res
