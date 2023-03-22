@@ -7,15 +7,15 @@ def solution(N, stages):
     answer = []
     total = len(stages)
     for i in range(1,N+1) :
-        temp = stages.count(i)
+        temp = stages.count(i) #현재 가지고 있는 스테이지 인원 카운팅
         
         if total == 0 :
-            result[i-1].append(i)
+            result[i-1].append(i) #아무도 해당 스테이지 도달하지 못했을 때 실패율 계산
             result[i-1].append(0)
         else :
-            result[i-1].append(i)
-            result[i-1].append(temp / total)
-            total -= temp
+            result[i-1].append(i) # 스테이지 인덱스 값 저장
+            result[i-1].append(temp / total) #스테이지 실패율 저장
+            total -= temp #스테이지별 인원 감소시키기
 
         
         
