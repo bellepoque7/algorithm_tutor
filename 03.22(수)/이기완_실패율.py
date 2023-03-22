@@ -1,3 +1,34 @@
+
+'정답률 100% 풀이'
+def solution(N, stages):
+    stages.sort()
+    temp = 0
+    result = [[] for i in range(N)]
+    answer = []
+    total = len(stages)
+    for i in range(1,N+1) :
+        temp = stages.count(i)
+        
+        if total == 0 :
+            result[i-1].append(i)
+            result[i-1].append(0)
+        else :
+            result[i-1].append(i)
+            result[i-1].append(temp / total)
+            total -= temp
+
+        
+        
+
+    result = sorted(result, key = lambda x : (-x[1],x[0]))
+    
+    for i in range(N) :
+        answer.append(result[i][0])
+    
+
+    return answer
+
+
 '정답률 63% 풀이'
 
 def solution(N, stages):
