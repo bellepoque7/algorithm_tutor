@@ -12,7 +12,7 @@ def solution(s):
         count = 1
         # prev 변수 가져와서 차근차근 비교하기, range 에 step 설정하여 건너뛰기
         for j in range(step, len(s), step):
-            print(j:j+step)
+            print(j,j+step)
             # prev 변수와 같으면 갯수 +1
             if prev == s[j:j+step]:
                 count += 1
