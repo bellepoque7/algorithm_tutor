@@ -41,7 +41,22 @@ n= 200,000 이므로 O(n^2)은 TLE(1억 이상) 따라서 O(nlogn)의 방법을 
 
 
 
-cf) 3/21 일일테스트 질문
+### 오늘의 팁
+
+- 반복문을 돌릴때 range(len(my_list)) 대신 enumerate을 써보세요
+- 성능이차는 아주 미묘하지만 가독성은 굉장히 좋아집니다. (Link)[https://stackoverflow.com/questions/11990105/rangelenlist-or-enumeratelist]
+
+```
+for i in range(len(my_list)):
+  print(i, my_list[i])
+  
+for i,j in enumerate(my_list):
+  print(i,j))
+```
+
+- 무엇인가 나눌때는 division by zero, 즉, 분모에 0에 가는 경우의 수는 없는지 체크해보세요
+
+### 3/21 일일테스트 질문
 문제: 총쏘고 돌리고 총쏘고 무한 반복
 
 정답코드
