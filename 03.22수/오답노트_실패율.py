@@ -5,10 +5,9 @@
 '''
 
 def solution(N, stages):
-    stages.sort()  # Q) 굳이 sorting 할필요가 있었을까요?
+    stages.sort()
     temp = 0
     result = [[] for i in range(N)]
-    print(result)
     answer = []
     total = 0
     for i in range(1,N+1) :

@@ -11,7 +11,7 @@ def solution(n, stages):
     # 각 스테이지에 머물러 있는 플레이어 수를 계산
     for stage in stages:
         num_stages[stage] += 1
-
+    print(num_stages)
     # 실패율 계산
     failure_rate = []
     for i in range(1, n+1):
@@ -29,10 +29,12 @@ def solution(n, stages):
     answer = [stage[0] for stage in failure_rate]
     return answer
 
-def main():
-    N=int(read())
-    stage=list(map(int,read().split()))
-    print(solution(N,stage))
+# def main():
+#     N=int(read())
+#     stage=list(map(int,read().split()))
+#     print(solution(N,stage))
 
-if __name__=='__main__':
-    main()
+# if __name__=='__main__':
+#     main()
+
+solution(5,[2, 1, 2, 6, 2, 4, 3, 3]) #[3,4,2,1,5]
