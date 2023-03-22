@@ -50,11 +50,9 @@ deque[(3,1),(2,1),(1,1)]
 교육생 rotate 구현
 ```
 for i in range(n):
-  Deque.popleft()
-  list.append()
+  A,B = Deque.popleft()
+  list.append((A,B))
 
 ```
 - 결과 test case(n= 1000)일때 TLE
 - 교훈: 파이썬 내장함수는 똑똑하다. 구현된 함수가 있으면 잘 써보자. 자주 쓰는 메소드의 time compexity를 잘 알면 좋다.
-
-
