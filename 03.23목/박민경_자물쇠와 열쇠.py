@@ -1,4 +1,4 @@
-# 현재 54점 
+#pass
 
 def rotate_right(arr, M):
     tmp = [[0 for _ in range(M)] for _ in range(M)]
@@ -24,7 +24,14 @@ def check_board(N, M, board):
                 return False
     return True
     
-    
+
+def print_map(arr, K):
+    for i in range(K):
+        for j in range(K):
+            print(arr[i][j], end = ' ')
+        print()
+    print('---------------')
+
 def solution(key, lock):
     N = len(lock)
     M = len(key)
@@ -36,18 +43,27 @@ def solution(key, lock):
         for j in range(N):
             board[i+M][j+M] = lock[i][j]
 
-    #key 회전하며 비교
     for i in range(4):
-        rotate_key = rotate_right(key, M)
+        key = rotate_right(key, M)
+        #print_map(key, M)
 
-        for start_i in range(N+M):
-            for start_j in range(N+M):
-                combi(start_i, start_j, M, rotate_key, board)
-
-                if check_board(N, M, board):
-                    return True
-
-                delete(start_i, start_j, M, rotate_key, board)
+        for start_i in range(N+M+1):
+            for start_j in range(N+M+1):
+                combi(start_i, start_j, M, key, board)
                 
+                if check_board(N, M, board):
+                    # return True
+                    print('True')
+
+                delete(start_i, start_j, M, key, board)
+
     return False
+
+def main():
+    key = [[0, 0, 0], [1, 0, 0], [0, 1, 1]]
+    lock = [[1, 1, 1], [1, 1, 0], [1, 0, 1]]
     
+    print(solution(key, lock))
+
+if __name__ == '__main__':
+    main()
