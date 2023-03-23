@@ -2,6 +2,15 @@
 
 ### 1. 문제 예시
 
+<img width="537" alt="image" src="https://user-images.githubusercontent.com/39439424/227134911-10b29e67-166d-46c9-a65d-eed77e4484ff.png">
+
+<img width="521" alt="image" src="https://user-images.githubusercontent.com/39439424/227134949-00503f74-5089-4c82-af6f-09cb35148f6f.png">
+
+
+
+[역시 시각화가 짱입니다](https://docs.google.com/spreadsheets/d/1Jf18u-kJ9rUhMqmRO3rO9SO_fU0VvCwDNYiRSEb-evk/edit#gid=0)
+
+![image](https://user-images.githubusercontent.com/39439424/226937819-209cd93b-ed7d-42ea-b214-8a0773a466f8.png)
 
 ### 2. idea.
 
@@ -33,7 +42,7 @@
 
 ### 4. 기타
 
+- 종부님 코드 어떻게 개선할까요?
 
-[역시 시각화가 짱입니다](https://docs.google.com/spreadsheets/d/1Jf18u-kJ9rUhMqmRO3rO9SO_fU0VvCwDNYiRSEb-evk/edit#gid=0)
+현재 같은 크기만 해결할 수 있는 상태. 어떻게 개선할 수 있을까요? 가능은 할까요?
 
-![image](https://user-images.githubusercontent.com/39439424/226937819-209cd93b-ed7d-42ea-b214-8a0773a466f8.png)
