@@ -52,8 +52,7 @@ def solution(key, lock):
                 combi(start_i, start_j, M, key, board)
                 
                 if check_board(N, M, board):
-                    # return True
-                    print('True')
+                    return True
 
                 delete(start_i, start_j, M, key, board)
 
