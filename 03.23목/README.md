@@ -14,6 +14,13 @@
 
 - roate_90 함수(Input: 열쇠, output: 90도 회전 시킨 열쇠)
   - result: 90도 회전 시킨 열쇠
+  - ex. 2Darray 기준으로 회전시키기: result[j][n-j-1] = a[i][j]
+
+만약 위 로직이 생각 나지 않았다면, 예시에 대한 90도 돌리는거 직접 예시는 것도 방법
+
+<img width="371" alt="image" src="https://user-images.githubusercontent.com/39439424/227097746-a25900ba-1419-45ed-a993-6ffbdfc76205.png">
+
+
 - check 함수(Input: 3배 확장 시킨 자물쇠, output: Boolean)
   - lock_length: 확장시킨 자물쇠 길이의 1/3
 - solution 함수(Input: 열쇠와 자물쇠, output: Boolean)
