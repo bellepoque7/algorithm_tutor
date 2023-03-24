@@ -9,7 +9,7 @@ algorithm 스터디를 위한 코드 집합입니다.
 
 ## 2. 문제
 
-당일까지 해당일자 문제를 풀어오세요! 
+당일까지 해당일자 문제를 풀어오세요! ,!! 3월 5주차 문제 선정완료!!!
 
 3월 4주차
 - 3월 20일(월): !**어려움**! [기둥과 보](https://school.programmers.co.kr/learn/courses/30/lessons/60061) Lv 3, 2020 카카오 신입공채  
@@ -18,11 +18,11 @@ algorithm 스터디를 위한 코드 집합입니다.
 - 3월 23일(목): [자물쇠와 열쇠](https://school.programmers.co.kr/learn/courses/30/lessons/60059) Lv 2, 2020 카카오 신입공채
 
 
-3월 5주차 3/24(금) 선정예정
-- 3월 27일(월):
-- 3월 28일(화):
-- 3월 29일(수):
-- 3월 30일(목):
+3월 5주차 
+- 3월 27일(월): !**어려움**! [아맞다우산!](https://www.acmicpc.net/problem/17244) 골드2(프로그래머스 기준 Lv 3?), 코딩테스트3번 기출
+- 3월 28일(화): [신고 결과 받기](https://school.programmers.co.kr/learn/courses/30/lessons/92334) Lv 1, 2022 카카오 신입공채
+- 3월 29일(수): [후보키](https://school.programmers.co.kr/learn/courses/30/lessons/42890) Lv 2, 2019 카카오 신입공채
+- 3월 30일(목): [개인정보수집 유효기간](https://school.programmers.co.kr/learn/courses/30/lessons/150370) Lv 1, 2023 카카오 신입공채
 
 ## 코드 올리는 방법
 
