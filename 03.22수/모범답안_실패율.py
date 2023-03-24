@@ -8,7 +8,7 @@ def solution(N, stages):
     #스테이지 번호를 1부터 N까지 증가시킴
     for i in range(1,N+1):
         #해당 스테이지에 머물러 있는 사람의 수 계산
-        cnt = stages.count(i)
+        cnt = stages.count(i)   # list.count() 메소드는 O(n)입니다.
         
         #실패율 계산
         if length ==0:
