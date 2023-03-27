@@ -9,6 +9,9 @@
 ### 2. 함수 설계
 
 1. get_distance: 대각행렬로 출발도착 지점의 최단거리를 dist 2d array에 저장
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/39439424/227852177-94d13312-be97-44ba-88e4-bcb861868e7a.png">
+
+
 - 출발,도착 지점별로 visited를 초기화 하는 것이 일반적
 - vistied_count을 올려가며(1,2,3,4... )덮어 씌워서 체크해도 됨
 
