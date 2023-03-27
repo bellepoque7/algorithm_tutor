@@ -1,4 +1,4 @@
-## pass 772
+## pass 772ms
 
 from collections import deque
 from itertools import *
