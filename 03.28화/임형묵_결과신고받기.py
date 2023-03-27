@@ -1,8 +1,4 @@
 def solution(id_list, report, k):
-    n = len(id_list)
-    numbering=[]
-    for i in range(n):
-        numbering.append(i)
 
     report_dict = dict() ; final_report_dict = dict()
 
