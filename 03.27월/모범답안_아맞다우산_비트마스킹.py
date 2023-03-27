@@ -28,6 +28,7 @@ def bfs(y, x):
                         elif board[ny][nx] == 'X':
                             pos = pos_things.index([ny, nx])
                             nbit = bit | (1 << pos)
+                            # print(nbit)
                             visited[ny][nx][nbit] = 1
                             q.append([ny, nx, nbit, nd])
 

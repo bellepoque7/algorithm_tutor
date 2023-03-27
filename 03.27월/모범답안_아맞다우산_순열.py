@@ -94,7 +94,7 @@ def solution():
     '''
     for i in permutations(range(1, stuff_cnt+1)):     
         '''
-         앞뒤에 depart, end 순번 붙이기 [0, 1, 2, 3, 4, 5],[0, 1, 2, 4, 3, 5], [0, 1, 3, 2, 4, 5]
+         앞뒤에 start, end 순번 붙이기 [0, 1, 2, 3, 4, 5],[0, 1, 2, 4, 3, 5], [0, 1, 3, 2, 4, 5]
         '''
         route = [0]+list(i)+[stuff_cnt+1] 
         td = 0
