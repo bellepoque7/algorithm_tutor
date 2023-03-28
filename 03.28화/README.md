@@ -1,9 +1,15 @@
-##
-파일은 `임정_기둥과보` 와 같이 저장해주세요.
-
 ## 1.문제 예시
 
 ## 2. idea
+
+dictionary 를 써보자
+
+- answer: 정답을 담을 list
+- report: 중복신고 제거 set -> list
+- user: 유저별 신고 id 저장 dict
+- cnt: 유저별 신고당한 횟수 저장 dict
+
+
 
 ## 3. 예외처리하기 방법 3가지
 
