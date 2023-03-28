@@ -1,3 +1,5 @@
+#정답
+
 from itertools import combinations
 
 def solution(relation):
