@@ -1,3 +1,5 @@
+from collections import defaultdict
+
 def solution(id_list, report,k):
     answer = []
     # 중복 신고 제거
@@ -10,7 +12,7 @@ def solution(id_list, report,k):
     for r in report:
         # report의 첫번째 값은 신고자id, 두번째 값은 신고당한 id
         a,b = r.split()
-        # 신고자가 신고한 id 추가
+        # 신고자가 신고한 id 추가, set은 append
         user[a].add(b)
         # 신고당한 id의 신고 횟수 추가
         cnt[b] += 1
