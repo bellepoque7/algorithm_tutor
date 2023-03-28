@@ -2,6 +2,9 @@
 
 ## 2. idea
 
+- solution 함수
+- input: id_list, report, k, output:result
+
 dictionary 를 써보자
 
 - answer: 정답을 담을 list
@@ -11,7 +14,7 @@ dictionary 를 써보자
 
 
 
-## 3. 예외처리하기 방법 3가지
+## 3. 번외) 예외처리하기 방법 3가지
 
 1. if조건문 + dict
 
