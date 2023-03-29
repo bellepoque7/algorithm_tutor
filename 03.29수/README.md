@@ -10,15 +10,32 @@
 - 문제 예시에서는 4가지의 컬럼이 있음. 따라서 4C1 + 4C2+ 4C3 + 4C4 의 조합 15가지가 나올 수 있음.
 - 이 모든 것에 대해서 iteration 을 통하여 하기 2가지를 검정 하면 됨
 
+
+1. 자료구조 선언
+- 위 인덱스를 바탕으로 value를 입력하여 2d array 로 각각 만듬, for 문을 통한 증가하는 combination
+
+```
+for i in range(1, col+1):
+        combi.extend(combinations(range(col), i))
+```
 <img width="1138" alt="image" src="https://user-images.githubusercontent.com/39439424/228446735-830dd555-2c17-4640-99c2-72fff63a8bff.png">
 
-1. 유일성 체크
-- 위 인덱스를 바탕으로 value를 입력하여 2d array 로 각각 만듬
-<img width="1340" alt="image" src="https://user-images.githubusercontent.com/39439424/228426828-8b86aee4-05cc-4ce3-90b8-07af8174d8ee.png">
+- get_temp 함수: 위 인덱스를 가지고 모든 경우에 대한 Table을 만든다. 
+
+<img width="61" alt="image" src="https://user-images.githubusercontent.com/39439424/228448502-624c9c01-9e4d-4615-9c2a-0c0767ca01d9.png">
+- 유일성을 만족하지 않는 테이블 형태
+<img width="102" alt="image" src="https://user-images.githubusercontent.com/39439424/228449154-fcb5c4a9-39e1-4bca-a921-790ca4446a54.png">
+<img width="143" alt="image" src="https://user-images.githubusercontent.com/39439424/228448586-af54a270-f0a7-48d9-9f1a-1f83b6162795.png">
+<img width="251" alt="image" src="https://user-images.githubusercontent.com/39439424/228448637-b648ba44-3913-403e-ad6d-73396ae24780.png">
+
+
+
+2. 유일성 체크
 - set 함수를 통한 중복제거했을때, len(relation) 기본 입력 데이터의 행의 길이와 같다면 유일성 만족
 - 또한 추후 최소성을 체크하기 위하여 Flag = True 선언
 
-2. 최소성 체크
+
+3. 최소성 체크
 - 최소성은 유일성 이후 체크해야 하는 것이 포인트
 - 최소성은 부분 집합의 개념을 이용. 
 
