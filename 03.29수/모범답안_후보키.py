@@ -1,20 +1,23 @@
 from itertools import combinations
+import pandas as pd
 
 
-'''
-모든 컬럼의 조합을 만들어서 tuple로 저장
-[('100',), ('200',), ('300',), ('400',), ('500',), ('600',)]
-.....
-[('100', 'ryan'), ('200', 'apeach'), ('300', 'tube'), ('400', 'con'), ('500', 'muzi'), ('600', 'apeach')]
-....
-[('100', 'ryan', 'music', '2'), ('200', 'apeach', 'math', '2'), ('300', 'tube', 'computer', '3'), ('400', 'con', 'computer', '4'), ('500', 'muzi', 'music', '3'), ('600', 'apeach', 'music', '2')]
-'''
 def get_tmp(col_idx,relation):
+    '''
+    col_idx(컬럼의 인덱스)를 전달받으면 해당 값을 가지고 2darray 를 만드는 함수 
+    [('100',), ('200',), ('300',), ('400',), ('500',), ('600',)]
+    .....
+    [('100', 'ryan'), ('200', 'apeach'), ('300', 'tube'), ('400', 'con'), ('500', 'muzi'), ('600', 'apeach')]
+    ....
+    [('100', 'ryan', 'music', '2'), ('200', 'apeach', 'math', '2'), ('300', 'tube', 'computer', '3'), ('400', 'con', 'computer', '4'), ('500', 'muzi', 'music', '3'), ('600', 'apeach', 'music', '2')]
+    '''
+
     tmp = []
     for item in relation:
         candidate = tuple([item[key] for key in col_idx])
         tmp.append(candidate)
-    print(tmp)
+    # print(tmp)
+    # print(pd.DataFrame(tmp))
     return tmp
 
 
@@ -26,7 +29,7 @@ def solution(relation):
     combi = []
     for i in range(1, col+1):
         combi.extend(combinations(range(col), i))
-    #print(combi)
+    # print(combi)
     # [(0,), (1,), (2,), (3,), (0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3), (0, 1, 2), (0, 1, 3), (0, 2, 3), (1, 2, 3), (0, 1, 2, 3)]
 
         
