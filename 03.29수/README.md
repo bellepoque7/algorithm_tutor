@@ -3,6 +3,9 @@
 
 ## 1. 문제 예시
 
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/39439424/228446899-16acc9b9-4263-4a4e-8a3c-f94bf89b210b.png">
+
+
 ## 2. 아이디어
 - 문제 예시에서는 4가지의 컬럼이 있음. 따라서 4C1 + 4C2+ 4C3 + 4C4 의 조합 15가지가 나올 수 있음.
 - 이 모든 것에 대해서 iteration 을 통하여 하기 2가지를 검정 하면 됨
