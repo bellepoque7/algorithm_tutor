@@ -11,3 +11,6 @@
 - 방법 3: datatime 함수이용 but customizing 귀찮음 pass
 (https://docs.python.org/ko/3/library/datetime.html)
 
+<img width="497" alt="image" src="https://user-images.githubusercontent.com/39439424/228772936-45e2ebec-8298-451f-92c8-8cc553a13251.png">
+
+
