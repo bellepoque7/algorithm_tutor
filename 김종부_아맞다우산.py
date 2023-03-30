@@ -46,24 +46,29 @@ for i in range(M):
             check.append((i,j))
         if a[i][j] == 'E':
             check.append((i,j))
+# S,E를 구분없이 넣었음 괜찮을까?..
 # print(check)
 distance = [[0] * len(check) for _ in range(len(check))]
-
+# print('distance',distance)
 index_check = []
 for idx, v in enumerate(check): 
     index_check.append(idx)
     bfs(idx,v[0],v[1])
-# print(distance)
+for i in range(M):
+    print(distance[i])
 
-res = 1e9
+# res = 1e9
+res = []
 for permu in permutations(index_check):
     # print(permu)
     new = [0] + list(permu) + [len(check)-1]
-    # print(new)
+    # print(new,) # [0, 0, 1, 2, 3, 4, 5, 5] 양 끝 0,5를 제외하고 순열조합 
     temp = 0
     for i in range(len(new)-1):
         temp += distance[new[i]][new[i+1]]
-    res = min(res, temp)
+    # print(temp)
+    # res = min(res, temp)
+    res.append(temp)
 print(res) 
 
 
