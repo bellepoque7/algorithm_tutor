@@ -12,7 +12,7 @@
 - 방법 2: 모두 일수 로 변경) 모든 숫자를 월로 계산하여! 
 - 자료구조를 통일하는것은 매우 중요합니다
 
-### 자료구조 + 알고리즘 + 코드 길이 = 일정의 법칙
+### 자료구조 * 알고리즘 * 코드 길이 = 일정의 법칙
 
 - 방법 3: datatime 함수이용 but customizing 귀찮음 pass
 (https://docs.python.org/ko/3/library/datetime.html)
