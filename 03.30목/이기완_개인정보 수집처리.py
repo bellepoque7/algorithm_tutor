@@ -16,7 +16,7 @@ def solution(today, terms, privacies):
     num_p = len(privacies)
     num_t = len(terms)
     answer = []
-    today_date = change_date(today)
+    today_date = change_date(today) +1
     date_p = []
     for i in range(num_p) :
         date_p.append(change_date(privacies[i]))
@@ -34,9 +34,7 @@ def solution(today, terms, privacies):
                 continue
 
     
-
-    
-        if date_p[i] <= today_date :
+        if date_p[i] < today_date :
             answer.append(i+1)
     
     print(date_p)               
