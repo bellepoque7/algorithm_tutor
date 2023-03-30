@@ -17,7 +17,7 @@ def solution(today, terms, privacies):
         i + 1 for i, privacy in enumerate(privacies)
         if to_days(privacy[:-2]) + months[privacy[-1]] <= today
     ]
-    print(expire)
+    # print(expire) [1,4,5]
     return expire
 
 # today = "2022.05.19"
