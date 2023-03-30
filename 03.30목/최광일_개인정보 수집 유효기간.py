@@ -2,58 +2,46 @@
 
 https://school.programmers.co.kr/learn/courses/30/lessons/150370
 
-테스트 케이스 Fail 
+TC 100% 통과
 
-datatime을 사용하는것아 아니라 year, month, day를 수동으로 28일로 계산해야하는가 ???
+1. 처음에 datetime 을 사용했는데 TC 통과 못함. 
+2. 한달을 28일로 잡아야 한다는 조건때문에 날짜를 수동으로 계산하는 함수로 만들어서 패스함. 
 
 '''
 
 
-from datetime import date
+def calc(strDate):
+    month2day = 28
+    year,month,day = strDate.split('.')
+    days = 0
+    days += int(year) * 12 * month2day
+    days += int(month) * month2day
+    days += int(day)
+
+    return days
 
 def solution(today, terms, privacies):
+
+    t_days = calc(today)
+
     answer = []
-    print('today =', today)
-    print('terms =', terms)
-    print('privacies=', privacies)
+    # print(f'today = {today}, t_days = {t_days}')
+    # print('terms =', terms)
+    # print('privacies=', privacies)
 
-    year, month, day = today.split('.')
-
-    todayDate = date(int(year), int(month), int(day))
-    print('*****')
-    print('todayDate = ', todayDate)
-
-    t_dic = {}
+    tDict = {}
     for i in terms:
-        t, m = i.split(' ')
-        t_dic[t] = 28 * int(m)
-        # t_dic.append((t,28 * int(m)))
-    print(t_dic)
+        t,month = i.split(' ')
+        tDict[t] = int(month)
 
-    p_list = []
-    for i in privacies:
-        d, t = i.split(' ')
-        year, month, day = d.split('.')
-        p_list.append((t, date(int(year), int(month), int(day))))
-    print(p_list)
-
-    cnt = 0
-
-    over = []
-
-    for p in p_list:
-        p_date = p[1]
-        delta = todayDate - p_date
-        cnt +=1
-        if delta.days >= t_dic[p[0]]:
-            over.append(cnt)
-
-
-        print(f'p_date = {p_date}, delta = {delta.days},terms = {p[0]},days = {t_dic[p[0]]}')
-
-        # print('delta',t_date-todayDate)
-    print(over)
-
+    for i in range(len(privacies)):
+        p_date,p_terms = privacies[i].split(' ')
+        duration = tDict[p_terms] * 28
+        
+        # print(calc(p_date),t_days,duration)
+        if t_days - calc(p_date)  >= duration:
+            answer.append(i+1)
+    # print(answer)
     return answer
 
 today = "2020.01.01"
