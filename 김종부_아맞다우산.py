@@ -1,8 +1,6 @@
 ''' 아맞다우산 
 튜터님 틀린곳좀 찾아주세요... 예제답도 나와서..'''
 
-
-
 import sys
 read = sys.stdin.readline
 sys.setrecursionlimit(10**6)
@@ -54,21 +52,20 @@ index_check = []
 for idx, v in enumerate(check): 
     index_check.append(idx)
     bfs(idx,v[0],v[1])
-for i in range(M):
-    print(distance[i])
+# for i in range(M):
+#     print(distance[i])
 
 # res = 1e9
 res = []
 for permu in permutations(index_check):
     # print(permu)
     new = [0] + list(permu) + [len(check)-1]
-    # print(new,) # [0, 0, 1, 2, 3, 4, 5, 5] 양 끝 0,5를 제외하고 순열조합 
+    print(new,) # [0, 0, 1, 2, 3, 4, 5, 5] 양 끝 0,5를 제외하고 순열조합 
     temp = 0
     for i in range(len(new)-1):
         temp += distance[new[i]][new[i+1]]
     # print(temp)
     # res = min(res, temp)
     res.append(temp)
-print(res) 
-
-
+# print(res)
+# print(min(res))
